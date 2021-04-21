@@ -6,12 +6,15 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    list-style: none;
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
     background-color: rgb(243, 243, 243);
+}
+
+main {
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -22,9 +25,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 60%;
-    height: 100vh;
+    width: 65%;
+    height: 85vh;
 }
+
+/* Tela do celular */
 
 .instagram-phone {
     display: flex;
@@ -34,8 +39,11 @@ body {
 }
 
 .instagram-phone img {
-    height: 50rem;
+    height: 42rem;
+    margin-top: 20px;
 }
+
+/* Login */
 
 .instagram-continue {
     display: flex;
@@ -43,7 +51,7 @@ body {
     justify-content: space-around;
     flex-direction: column;
     width: 50%;
-    min-height: 36rem;
+    min-height: 38rem;
 }
 
 .group {
@@ -55,6 +63,7 @@ body {
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
+    border-radius: 5px;
 }
 
 .group:nth-child(1) {
@@ -74,8 +83,10 @@ body {
 }
 
 .profile-photo img {
-    height: 6rem;
+    height: 8rem;
 }
+
+/* Botões */
 
 .instagram-login {
     background-color: #0095F6;
@@ -84,6 +95,13 @@ body {
     padding: 8px;
     border-radius: 4px;
     margin-top: 15px;
+
+    transition: 0.5s ease;
+}
+
+.instagram-login:hover{
+    background-color: #007fd3;
+    filter: drop-shadow(0px 2px 5px #00589283);
 }
 
 .instagram-logout {
@@ -115,7 +133,7 @@ body {
 
 .download {
     display: flex;
-    width: 100%;
+    width: 75%;
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
@@ -129,10 +147,65 @@ body {
 
 .app-download:nth-child(1) {
     background-image: url(./img/apple-button.png);
+    transition: 0.5s ease;
 }
 
 .app-download:nth-child(2) {
     background-image: url(./img/play-button.png);
+    transition: 0.5s ease;
+}
+
+.app-download:hover{
+    filter: drop-shadow(0px 2px 5px #1f1f1f83);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    bottom: 0;
+    color: #8e8e8e;
+}
+
+.nav-footer {
+    margin: auto;
+    justify-content: center;
+}
+
+.menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    bottom: 0;
+    justify-content: center;
+}
+
+.menu-footer li {
+    margin: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+
+}
+
+.rodape-footer {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.change-language {
+    margin: 10px;
+    border: none;
+    background-color: #FAFAFA;
+    color: #8e8e8e;
 }
 
 /* Media queries */
